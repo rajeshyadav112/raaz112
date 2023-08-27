@@ -11,16 +11,9 @@ public class Ismultiple {
 
 	public static void main(String[] args) {
 		
-		WebDriver driver=new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://demoqa.com/select-menu");
-		WebElement drop = driver.findElement(By.xpath("//div[text()='Select Option']"));
-		
-		Actions action=new Actions(driver);
-		
-		action.sendKeys(drop ,"Group 1,option 1").sendKeys(Keys.ENTER).perform();
 		
 		
+		demo.run(10,20 );
 	}
 
 }
