@@ -1,31 +1,27 @@
 package actionClass;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class DragAndDrop {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
-		WebElement frame = driver.findElement(By.xpath("(//iframe[@src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='])[1]"));
-		driver.switchTo().frame(frame);   
+		driver.get("https://www.netflix.com/in/");
 		
-WebElement source = driver.findElement(By.xpath("//img[@alt='The chalet at the Green mountain lake']"));
-		WebElement destination = driver.findElement(By.id("trash"));
+		WebElement button = driver.findElement(By.linkText("Sign In"));
 		
-		Actions action = new Actions(driver);
-		action.dragAndDrop(source, destination).perform();
+		Actions action =new Actions(driver);
+		action.keyDown(Keys.CONTROL).click(button).perform();
+		action.keyUp(Keys.CONTROL).perform();
+		action.click(button).perform();
 		
-		driver.switchTo().defaultContent();
-		Thread.sleep(4000);
-		
-		driver.findElement(By.xpath("(//a[.='Free Ebooks'])[1]")).click();
 	}
  
 }

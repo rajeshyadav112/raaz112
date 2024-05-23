@@ -16,9 +16,12 @@ public class ScrollVertically {
 		Thread.sleep(5000);
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,500)");
+		
+		
 		Thread.sleep(3000);
-		js.executeAsyncScript("window.scrollBy(0,-200)", args);
-
+		//To scroll bottom
+		js.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)", args);
+		js.executeScript("window.scrollBy(0,-500)");
 	}
 
 }

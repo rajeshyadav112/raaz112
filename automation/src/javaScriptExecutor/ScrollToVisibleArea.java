@@ -13,10 +13,15 @@ public class ScrollToVisibleArea {
 		driver.manage().window().maximize();
 		driver.get("https://www.selenium.dev/");
 		
-		WebElement text = driver.findElement(By.xpath("//h4[.='Selenium IDE']"));
+		WebElement text = driver.findElement(By.xpath("//h4[text()='Selenium IDE']"));
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView(true)",text);
+		//js.executeScript("arguments[0].scrollIntoView(false)",text);
+		
+		//To scroll the webelement into visible area
+		
+		WebElement project = driver.findElement(By.xpath("//h2[text()='Support the Selenium Project']"));
+		js.executeScript("arguments[0].scrollIntoView(true)", project);
 	}
 
 }

@@ -10,8 +10,6 @@ public class DownloadpopUps {
 		driver.manage().window().maximize();
 		driver.get("https://demo.imacros.net/Automate/Downloads");
 		
-		Runtime.getRuntime().exec(null);
-		
 	}
 
 }

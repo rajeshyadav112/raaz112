@@ -30,6 +30,7 @@ public class Jdbc_Connectivity {
 			System.out.println(	rs.getInt("id"));
 			System.out.println(	rs.getString("name"));
 			System.out.println(	rs.getInt("age"));
+			
 		}
 		rs.close();
 		conn.close();

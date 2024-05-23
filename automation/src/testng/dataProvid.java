@@ -19,7 +19,7 @@ public class dataProvid {
 		
 		public void Login(String username, String password) throws InterruptedException {
 			driver = new EdgeDriver();
-			driver.get("https://demo.actitime.com/login.do");
+			driver.get("demo.actitime./login.do");
 			System.out.println("Browser is launched");
 			driver.manage().window().maximize();
 			

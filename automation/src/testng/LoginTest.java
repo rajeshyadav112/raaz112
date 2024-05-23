@@ -13,7 +13,7 @@ public class LoginTest {
 	WebDriver driver=null;
 	
 	@BeforeClass()
-	public void browserlaunch() 
+	public void browserlaunch() {
 		 driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/login/");
 		

@@ -16,7 +16,7 @@ public class UploadPopup {
 		
 		driver.findElement(By.xpath("//button[text()='Upload Resume']")).click();
 		
-		Runtime.getRuntime().exec("./autoit/upload.exe");
+		Runtime.getRuntime().exec("./autoit/uploadx.exe");
 
 	}
 

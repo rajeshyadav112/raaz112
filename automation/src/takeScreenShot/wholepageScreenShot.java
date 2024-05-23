@@ -20,7 +20,7 @@ public class wholepageScreenShot {
 		TakesScreenshot shot =(TakesScreenshot)driver;
 		
 		File source = shot.getScreenshotAs(OutputType.FILE);
-		File destination = new File("./screenshotpng");
+		File destination = new File("./screenshot.png");
 		Files.copy(source, destination);
 
 	}

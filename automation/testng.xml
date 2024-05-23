@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
 	  <groups>
-		  <run>
-			  <include name="smoke"></include>
-			  <include name="functional"></include>
-		  </run>
+		 <run>
+			   <include name="smoke"></include>
+			   <exclude name="functional"></exclude>
+		 </run>
 	  </groups>
     <classes>
 		
