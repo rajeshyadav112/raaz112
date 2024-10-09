@@ -15,7 +15,7 @@ public class ClickAndHold {
 		driver.get("www.howtocodeschool.com/2021/10/demo-of-simple-click-and-hold-effect.html");
 		WebElement hold = driver.findElement(By.id("btn"));
 		
-Actions action = new Actions(driver);
+       Actions action = new Actions(driver);
 		
 		action.clickAndHold(hold).perform();
 		Thread.sleep(3000);

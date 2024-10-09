@@ -12,7 +12,7 @@ public class NestedFRAME {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://chercher.tech/practice/frames");
+		driver.get("chercher.tech/practice/frames");
 		
 		WebElement frame1 = driver.findElement(By.id("frame1"));
 		

@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.google.common.io.Files;
 
-public class SingleElementScreenshot {
+public class  SingleElement {
 
 	public static void main(String[] args) throws IOException {
 		WebDriver driver=new ChromeDriver();
