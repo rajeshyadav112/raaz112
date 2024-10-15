@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-09T16:33:38 IST" name="Default suite" finished-at="2024-10-09T16:33:46 IST" duration-ms="7586">
+    <groups>
+      <group name="Regression">
+        <method signature="TestNgGroupexecution.click_On_signup_button()[pri:3, instance:testngdemo.TestNgGroupexecution@799f10e1]" name="click_On_signup_button" class="testngdemo.TestNgGroupexecution"/>
+      </group> <!-- Regression -->
+      <group name="smoke">
+        <method signature="TestNgGroupexecution.FullName()[pri:1, instance:testngdemo.TestNgGroupexecution@799f10e1]" name="FullName" class="testngdemo.TestNgGroupexecution"/>
+        <method signature="TestNgGroupexecution.EnterEmail()[pri:2, instance:testngdemo.TestNgGroupexecution@799f10e1]" name="EnterEmail" class="testngdemo.TestNgGroupexecution"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-10-09T16:33:38 IST" name="Default test" finished-at="2024-10-09T16:33:46 IST" duration-ms="7586">
+      <class name="testngdemo.TestNgGroupexecution">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testngdemo.TestNgGroupexecution@799f10e1]" started-at="2024-10-09T16:33:38 IST" name="setup" finished-at="2024-10-09T16:33:44 IST" duration-ms="5401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FullName()[pri:1, instance:testngdemo.TestNgGroupexecution@799f10e1]" started-at="2024-10-09T16:33:44 IST" name="FullName" finished-at="2024-10-09T16:33:44 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FullName -->
+        <test-method signature="EnterEmail()[pri:2, instance:testngdemo.TestNgGroupexecution@799f10e1]" started-at="2024-10-09T16:33:44 IST" name="EnterEmail" finished-at="2024-10-09T16:33:44 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterEmail -->
+        <test-method signature="click_On_signup_button()[pri:3, instance:testngdemo.TestNgGroupexecution@799f10e1]" started-at="2024-10-09T16:33:44 IST" name="click_On_signup_button" finished-at="2024-10-09T16:33:46 IST" duration-ms="1554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_signup_button -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testngdemo.TestNgGroupexecution@799f10e1]" started-at="2024-10-09T16:33:46 IST" name="teardown" finished-at="2024-10-09T16:33:46 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testngdemo.TestNgGroupexecution -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
