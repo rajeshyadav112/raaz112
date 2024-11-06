@@ -22,7 +22,7 @@ public class LoginTest  {
     	   
     	       driver=new ChromeDriver();
     	       driver.manage().window().maximize();
-    	       driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    	       driver.get("//opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     	       driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
     	      
     	       LoginPage l=new LoginPage(driver);
@@ -40,7 +40,7 @@ public class LoginTest  {
        @AfterClass
        public void teardown() {
     	   
-    	   driver.close();
-    	  // driver.quit();
+    	   //driver.close();
+    	   driver.quit();
        }
 }
