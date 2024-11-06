@@ -19,9 +19,9 @@ WebDriver driver;
 	public void loginCredentials(String username,String password) throws InterruptedException {
 		   driver=new ChromeDriver();
 			  driver.manage().window().maximize();
-			  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+			  driver.get("opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 			  Thread.sleep(3000);
-		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("user")).sendKeys(username);
 		driver.findElement(By.name("password")).sendKeys(password);
 		
 		driver.findElement(By.xpath("//button[text()=' Login ']")).click();

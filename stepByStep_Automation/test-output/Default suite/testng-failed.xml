@@ -5,9 +5,8 @@
     <classes>
       <class name="SimpleDemo.Demologin">
         <methods>
-          <include name="setup"/>
           <include name="logout"/>
-          <include name="loginCredentials" invocation-numbers="1 2"/>
+          <include name="loginCredentials" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- SimpleDemo.Demologin -->
     </classes>
